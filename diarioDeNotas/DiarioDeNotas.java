@@ -8,22 +8,11 @@ public class DiarioDeNotas{
 
          if(usuario.equalsIgnoreCase("Professor")){
          Professor professor = new Professor();
-         professor.imprimir();
-         professor.identificarProfessor(usuario);
-
-         System.out.println("O que tem aqui Get?"  + professor.getNome());
-
-         //professor.somarNotas(nota1, nota2, nota3);
-
-         }else if(usuario.equalsIgnoreCase("Aluno")){
-
-
-
-            Aluno aluno = new Aluno();
-            String nome = aluno.identificarAluno(usuario);
-
-            System.out.println("Seja bem vindo " + usuario + nome);
-
+         professor.identificarUsuario();
+         }
+         else if(usuario.equalsIgnoreCase("Aluno")){
+         Aluno aluno = new Aluno();
+            aluno.identificarUsuario();
          }else{
             System.out.println("Opção invalida ");
 
